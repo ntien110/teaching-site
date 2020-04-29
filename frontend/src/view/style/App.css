@@ -1,0 +1,32 @@
+* {
+  font-size: 2vw;
+  background: #ffffff;
+}
+
+.App {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 1fr 14fr;
+  grid-template-areas:
+    "navigator header"
+    "navigator content";
+}
+
+.header {
+  grid-area: header;
+}
+
+.navigator {
+  background: #00ff00;
+  grid-area: navigator;
+}
+
+.content {
+  background: #324243;
+  grid-area: content;
+}
+
+.hidden{
+  display: none !important;
+}
