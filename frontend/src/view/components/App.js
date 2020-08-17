@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Modal from "./Modal.component.js"
-import Header from "./Header.component.js"
+import Header from "./Header/Header.component.js"
+import Content from "./Content/Content.component"
 
 import '../style/App.css';
+import '../style/form.style.css'
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Header/>
-      <div className="navigator">Navigate</div>
-      <div className="content">Content</div>
-      <Modal>hello</Modal>
+      <Content/>
     </div>
   );
 }

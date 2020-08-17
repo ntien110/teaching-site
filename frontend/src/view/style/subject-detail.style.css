@@ -1,0 +1,110 @@
+.subject-detail-container {
+    height: 95%;
+    background-color: inherit;
+}
+
+.navigator {
+    position: fixed;
+    width: 25%;
+    left: 0;
+    height: 95%;
+    color: white;
+    background-color: #4a47a3;
+    margin: 0.3% 0 0.3% 0.1%;
+    overflow-y: auto;
+    
+}
+
+.subject-content {
+    position: absolute;
+    background-color: inherit;
+    width: 75%;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0.3%;
+}
+
+/* Subject navigator info */
+
+.subject-info {
+    background-color: inherit;
+    height: 30%;
+    text-align: center;
+}
+
+.subject-info button {
+    font-size: 2rem;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    width: 6rem;
+    height: 2rem;
+    line-height: 1.8rem;
+    border: none;
+    outline: none;
+}
+
+.subject-info button:hover {
+    background-color: #3B6978;
+    color: lightgoldenrodyellow;
+}
+
+.previous {
+    background-color: #32e0c4;
+    color: #3B6978;
+}
+
+.subject-info .subject-image {
+    display: block;
+    margin: 5% auto 3% auto;
+    height: 50%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.subject-info .subject-name {
+    background-color: inherit;
+    margin: 0;
+    padding-top: 5%;
+    font-size: 1.4rem;
+}
+
+.blog-item {
+    padding-left: 0.3rem;
+    background-color: #ad62aa;
+    text-align: left;
+    height: 3rem;
+    line-height: 3rem ; 
+}
+
+.blog-item .title {
+    background-color: inherit;
+    font-size: 1.2rem;
+    margin:  1% 0 0 0 !important;
+}
+
+.blog-content {
+    padding: 1% 2% 1% 5%;
+    font-size: 60%;
+    overflow-y: overlay !important;
+}
+
+.selected {
+    background-color: #8566aa;
+}
+
+.subject-content-info {
+    left: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.subject-content-info-container {
+    margin: 10% auto auto auto;
+}
+
+.subject-content-info-container div p {
+    font-size: 1.5 rem;
+}

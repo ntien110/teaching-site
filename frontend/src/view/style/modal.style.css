@@ -24,10 +24,49 @@
     transform: translate(-50%, -50%);
     max-height: 70%;
     min-height: 30%;
-    min-width: 40%;
-    width: 60%;
-    overflow-y: auto;
+    min-width: 30%;
+    max-width: 60%;
+    display: inline-block;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     z-index: 101;
 }
+
+.modal-header {
+    display: inline-block;
+    background-color: slategray;
+    top:0;
+    left:0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.modal-header h1{
+    font-size: 1.4rem;
+    display: inline;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-header .close-btn{
+    display: inline-flex;
+    float: right;
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    text-justify: auto;
+}
+
+.modal-body {
+    position: relative;
+    background-color: white;
+    max-height: 70%;
+    overflow-y: auto;
+    height: auto;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+

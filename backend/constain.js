@@ -1,5 +1,5 @@
 module.exports={
-    ACCESS_TOKEN_EXPIRATION: '1m',
+    ACCESS_TOKEN_EXPIRATION: '15s',
     RESET_TOKEN_EXPIRATION: '24h',
     role: {
         "admin": 0,

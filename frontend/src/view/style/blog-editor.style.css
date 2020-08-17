@@ -1,0 +1,18 @@
+.blog-editor .save-btn {
+    float: right;
+    margin: 5px 8px 0 0;
+    font-size: 1.2rem;
+    width: 6rem;
+    height: 2.6rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.title-inp {
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: darkgrey;
+    margin-bottom: 15px;
+}

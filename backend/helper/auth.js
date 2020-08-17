@@ -3,7 +3,7 @@ const roleList = require("../constain").role;
 const User = require("../models/user")
 
 const verifyMidleware = (role)=>async (req, res, next)=>{
-    const token = req.header('Authorization').split(" ")[1]
+    const token = req.header('Authorization')? req.header('Authorization').split(" ")[1]: undefined
 
     if (!token) {
         return res.status(401).send("Access denied.");
@@ -26,16 +26,20 @@ const getAccessToken = (payload, exp)=>{
 }
 
 const getResetToken = (user, exp) =>{
-    return "Bearer" + jwt.sign(
+    return "Bearer " + jwt.sign(
         {
-            type: "reser token",
-            _id: user._id
+            type: "reset token",
+            _id: user._id,
+            email: user.email,
+            name: user.name,
+            studentId: user.studentId,
         },
         process.env.TOKEN_SECRET+user.password,
         {expiresIn: exp})
 }
 
-const verifyResetToken = (token)=>{
+const verifyResetToken = async (token)=>{
+    token = token.split(" ")[1]
     try{
         const payload = jwt.decode(token)
         if(!payload._id){
@@ -44,7 +48,8 @@ const verifyResetToken = (token)=>{
                 message: "Invalid payload."
             }
         }
-        const foundUser = User.findById(payload._id)
+        
+        const foundUser = await User.findById(payload._id)
         const verifiedPayload = jwt.verify(token, process.env.TOKEN_SECRET+foundUser.password)
         return {
             valid: true,

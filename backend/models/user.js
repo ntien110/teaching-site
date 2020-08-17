@@ -16,7 +16,7 @@ const UserSchema  = mongoose.Schema({
         type: String,
         require: true,
         max: 255,
-        min: 6
+        min: 5
     },
     studentId: String,
     role: {

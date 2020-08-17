@@ -1,5 +1,42 @@
-.header .button {
-    background-color: brown;  
-    float: right;
-    margin: 0 1em 0 0em; 
+.login-status-wrapper {
+	float: right;
+	height: 100%;
+	width: 30%;
+	background-color: inherit;
+}
+
+.login-status-wrapper .button {
+	background: #f3c623;
+	color: #1d1d1d;
+	border-radius: 7px;
+	width: 25%;
+	min-width: 50px;
+	height: 70%;
+}
+
+.login-status-item {
+	position: relative;
+	background-color: inherit;
+	float: right;
+	border: 0;
+	margin: auto 5% auto 0;
+	font-size: 1.2rem;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: white;
+}
+
+.search-bar {
+	position: relative;
+	float: left;
+	border: none;
+	color: black;
+	text-align: center;
+	width: 30%;
+	margin: auto 0 auto 10%;
+	font-size: 1.2rem;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
